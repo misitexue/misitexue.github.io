@@ -1,4 +1,4 @@
-{:refdef:style="text-align: center;background-color: #ece4d9;"}
+{:refdef:style="text-align: center;"}
 ![Image](portrait_311x453.png)
 {:refdef}
 
