@@ -1,4 +1,4 @@
-{:refdef:style="text-align: center;background-color: #ece4d9;"}
+body {:refdef:style="text-align: center;background-color: #ece4d9;"}
 ![Image](portrait_311x453.png)
 
 
@@ -48,4 +48,4 @@
 # 自我评价
 有较强的**自我管理**和**学习能力**，闲暇之余，会自我学习充电，保持一种学习态度，与时俱进。平时话少，但沟通无障碍，团队合作也没问题。
 
-{:refdef}
+
