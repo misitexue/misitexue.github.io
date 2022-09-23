@@ -1,7 +1,9 @@
-# 基本信息
+
 {:refdef:style="text-align: center;"}
 ![Image](portrait_311x453.png)
 {:refdef}
+
+# 基本信息
 
 | 姓名        	|薛雄铠   |
 | :------------   | :------------  |
