@@ -1,6 +1,6 @@
-{:refdef:style="text-align: center;body:background-color: #ece4d9;"}
+{:refdef:style="text-align: center;background-color: #ece4d9;"}
 ![Image](portrait_311x453.png)
-
+{:refdef}
 
 # 基本信息
 
