@@ -67,7 +67,7 @@
 ![Image](EventSystem.jpg)
 ![Image](EventSystem2.jpg)
 
-```C#
+``` C#
 [CreateAssetMenu(menuName = "Events/Void Event Channel")]
 public class VoidEventChannelSO : ScriptableObject
 {
@@ -82,7 +82,7 @@ public class VoidEventChannelSO : ScriptableObject
 
 ```
 
-```C#
+``` C#
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private VoidEventChannelSO _exitGame = default;
@@ -94,7 +94,7 @@ public class UIManager : MonoBehaviour
 }
 ```
 
-```C#
+``` C#
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private VoidEventChannelSO _exitGame = default;
