@@ -2,20 +2,33 @@
 [CreateAssetMenu(menuName = "Events/Void Event Channel")]
 public class VoidEventChannelSO : ScriptableObject
 {
-	public UnityAction OnEventRaised;
+    public UnityAction OnEventRaised;
+    
+    public void RaiseEvent()
+    {
+        if (OnEventRaised != null)
+            OnEventRaised.Invoke();
+    }      
+}
 
-	public void RaiseEvent()
-	{
-		if (OnEventRaised != null)
-			OnEventRaised.Invoke();
-	}
+```
+
+```C#
+public class UIManager : MonoBehaviour
+{
+    [SerializeField] private VoidEventChannelSO _exitGame = default;
+	
+    public void ClickExitGame()
+    {
+        _exitGame.RaiseEvent();
+    }
 }
 ```
 
 ```C#
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private VoidEventChannelSO _exitGame = default;      // 跟踪游戏状态
+    [SerializeField] private VoidEventChannelSO _exitGame = default;
     
     private void OnEnable()
     {
