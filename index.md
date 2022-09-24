@@ -67,6 +67,8 @@
 ![Image](EventSystem.jpg)
 ![Image](EventSystem2.jpg)
 
+### 源码
+
 ```C#
 [CreateAssetMenu(menuName = "Events/Void Event Channel")]
 public class VoidEventChannelSO : ScriptableObject
@@ -81,8 +83,6 @@ public class VoidEventChannelSO : ScriptableObject
 }
 
 ```
-
-### 源码
 
 ```C#
 public class UIManager : MonoBehaviour
