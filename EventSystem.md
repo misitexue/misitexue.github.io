@@ -1,6 +1,3 @@
-layout: page
-title: "PAGE TITLE"
-permalink: /EventSystem.md/
 
 ```C#
 [CreateAssetMenu(menuName = "Events/Void Event Channel")]
