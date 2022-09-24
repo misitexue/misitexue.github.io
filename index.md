@@ -64,8 +64,8 @@
 
 ### 事件系统
 
-![Image](EventSystem.png)
-![Image](EventSystem2.png)
+![Image](EventSystem.jpg)
+![Image](EventSystem2.jpg)
 
 ```C#
 [CreateAssetMenu(menuName = "Events/Void Event Channel")]
