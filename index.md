@@ -62,7 +62,7 @@
 
 # 系统架构&源码展示
 
-### 事件系统
+### 系统架构
 
 ![Image](EventSystem.jpg)
 ![Image](EventSystem2.jpg)
@@ -81,6 +81,8 @@ public class VoidEventChannelSO : ScriptableObject
 }
 
 ```
+
+### 源码
 
 ```C#
 public class UIManager : MonoBehaviour
