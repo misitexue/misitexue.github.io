@@ -59,4 +59,54 @@
 # 自我评价
 有较强的 **自我管理** 和 **学习能力**，闲暇之余，会自我学习充电，保持一种学习态度，与时俱进。平时话少，但沟通无障碍，团队合作也没问题。
 
-[事件系统架构&源码](EventSystem/)
+
+# 系统架构&源码展示
+
+```C#
+[CreateAssetMenu(menuName = "Events/Void Event Channel")]
+public class VoidEventChannelSO : ScriptableObject
+{
+    public UnityAction OnEventRaised;
+    
+    public void RaiseEvent()
+    {
+        if (OnEventRaised != null)
+            OnEventRaised.Invoke();
+    }      
+}
+
+```
+
+```C#
+public class UIManager : MonoBehaviour
+{
+    [SerializeField] private VoidEventChannelSO _exitGame = default;
+	
+    public void ClickExitGame()
+    {
+        _exitGame.RaiseEvent();
+    }
+}
+```
+
+```C#
+public class GameManager : MonoBehaviour
+{
+    [SerializeField] private VoidEventChannelSO _exitGame = default;
+    
+    private void OnEnable()
+    {
+        _exitGame.OnEventRaised += ExitGame;
+    }
+    
+    private void OnDisable()
+    {
+        _exitGame.OnEventRaised -= ExitGame;
+    }
+	
+    private void ExitGame()
+    {
+        debug.log("Exit Game!")
+    }
+}
+```
