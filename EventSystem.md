@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
         _exitGame.OnEventRaised -= ExitGame;
     }
 	
-	    private void ExitGame()
+    private void ExitGame()
     {
         debug.log("Exit Game!")
     }
