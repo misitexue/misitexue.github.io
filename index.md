@@ -62,6 +62,11 @@
 
 # 系统架构&源码展示
 
+### 事件系统
+
+![Image](EventSystem.png)
+![Image](EventSystem2.png)
+
 ```C#
 [CreateAssetMenu(menuName = "Events/Void Event Channel")]
 public class VoidEventChannelSO : ScriptableObject
