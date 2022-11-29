@@ -29,7 +29,7 @@
 
 项目描述：
 
-* 项目主要框架 FGUI+UniTask+BestHttp+InputSystem+Addressables+Object pooling等。
+* 项目应用技术 FGUI+UniTask+BestHttp+InputSystem+Addressables+Object pooling等。
 * 项目基于 **Window** 平台，EA版本于2021年11月在steam发行，好评率基本维持85%左右。
 * 项目是一款集修仙、种田、养殖、钓鱼、炼丹、战斗等修仙养成类单机游戏，像素风，主要面向国内喜欢修仙题材的群体。
 
